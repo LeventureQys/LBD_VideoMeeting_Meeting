@@ -1,0 +1,7 @@
+﻿  LBD_VideoMeeting_Meeting.cpp
+  main.cpp
+c:\users\administrator\desktop\project\5.5\workshop\lbd_videomeeting_meeting\lbd_videomeeting_meeting\lbd_videomeeting_meeting.cpp(1651): warning C4715: “LBD_VideoMeeting_Meeting::AnalyseInsert”: 不是所有的控件路径都返回值
+  moc_LBD_VideoMeeting_Meeting.cpp
+qtmain.lib(qtmain_win.obj) : warning LNK4099: 未找到 PDB“qtmain.pdb”(使用“qtmain.lib(qtmain_win.obj)”或在“C:\Users\Administrator\Desktop\Project\5.5\WorkShop\LBD_VideoMeeting_Meeting\Release\qtmain.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+  LBD_VideoMeeting_Meeting.vcxproj -> C:\Users\Administrator\Desktop\Project\5.5\WorkShop\LBD_VideoMeeting_Meeting\Release\LBD_VideoMeeting_Meeting.exe
+  LBD_VideoMeeting_Meeting.vcxproj -> C:\Users\Administrator\Desktop\Project\5.5\WorkShop\LBD_VideoMeeting_Meeting\Release\LBD_VideoMeeting_Meeting.pdb (Full PDB)

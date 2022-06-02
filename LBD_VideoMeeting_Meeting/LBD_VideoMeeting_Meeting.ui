@@ -1,0 +1,1107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>LBD_VideoMeeting_MeetingClass</class>
+ <widget class="QMainWindow" name="LBD_VideoMeeting_MeetingClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>940</width>
+    <height>620</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>LBD_VideoMeeting_Meeting</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <widget class="QPushButton" name="btn_cam">
+    <property name="geometry">
+     <rect>
+      <x>309</x>
+      <y>554</y>
+      <width>64</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton:!checked:!hover{
+border:2px groove gray;border-radius:10px;padding:2px 4px;
+background-color: rgb(238, 238, 238);
+image: url(:/new/prefix1/CamareOn_default.png);
+}
+
+QPushButton:!checked:hover{
+border:2px groove gray;border-radius:10px;padding:2px 4px;
+background-color: rgb(238, 238, 238);
+image:url(:/new/prefix1/CamareOn_hover.png);
+}
+
+QPushButton:checked:!hover{
+border:2px groove gray;border-radius:10px;padding:2px 4px;
+background-color: rgb(238, 238, 238);
+image:url(./images/CamareOff_default.png)
+}
+
+QPushButton:checked:hover{
+border:2px groove gray;border-radius:10px;padding:2px 4px;
+background-color: rgb(238, 238, 238);
+image:url(:/new/prefix1/CamareOff_hover.png)
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lab_bg">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>940</width>
+      <height>540</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lab_toolbar">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>540</y>
+      <width>940</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(255, 255, 255)</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lab_Invite">
+    <property name="geometry">
+     <rect>
+      <x>670</x>
+      <y>380</y>
+      <width>121</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_mic">
+    <property name="geometry">
+     <rect>
+      <x>395</x>
+      <y>554</y>
+      <width>64</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton:!checked:!hover{
+
+border:2px groove gray;border-radius:10px;padding:2px 4px;
+background-color: rgb(238, 238, 238);
+image:url(:/new/prefix1/MicOn_default.png);}
+
+QPushButton:!checked:hover{
+border:2px groove gray;border-radius:10px;padding:2px 4px;
+background-color: rgb(238, 238, 238);
+image:url(:/new/prefix1/MicOn_hover.png);
+}
+
+QPushButton:checked:!hover{
+border:2px groove gray;border-radius:10px;padding:2px 4px;
+background-color: rgb(238, 238, 238);
+image:url(:/new/prefix1/MicOff_default.png)
+}
+
+QPushButton:checked:hover{
+border:2px groove gray;border-radius:10px;padding:2px 4px;
+background-color: rgb(238, 238, 238);
+image:url(:/new/prefix1/MicOff_hover.png)
+}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_invite">
+    <property name="geometry">
+     <rect>
+      <x>481</x>
+      <y>554</y>
+      <width>64</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton:!checked{
+
+border:2px groove gray;border-radius:10px;padding:2px 4px;
+background-color: rgb(238, 238, 238);
+image:url(:/new/prefix1/Invite_default.png)
+}
+
+QPushButton:checked{
+border:2px groove gray;border-radius:10px;padding:2px 4px;
+background-color: rgb(238, 238, 238);
+image:url(:/new/prefix1/Invite_hover.png);
+
+}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_close">
+    <property name="geometry">
+     <rect>
+      <x>567</x>
+      <y>554</y>
+      <width>64</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton:!hover{
+
+border:2px groove gray;border-radius:10px;padding:2px 4px;
+background-color: rgb(238, 238, 238);
+border-image:url(:/new/prefix1/End_default.png)
+}
+
+QPushButton:hover{
+border:2px groove gray;border-radius:10px;padding:2px 4px;
+background-color: rgb(238, 238, 238);
+border-image:url(:/new/prefix1/End_hover.png);
+
+}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lab_cam">
+    <property name="geometry">
+     <rect>
+      <x>311</x>
+      <y>595</y>
+      <width>60</width>
+      <height>11</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>微软雅黑</family>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(153, 153, 153);</string>
+    </property>
+    <property name="text">
+     <string>关闭摄像头</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lab_mic">
+    <property name="geometry">
+     <rect>
+      <x>403</x>
+      <y>595</y>
+      <width>60</width>
+      <height>11</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>微软雅黑</family>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(153, 153, 153);</string>
+    </property>
+    <property name="text">
+     <string>关闭话筒</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lab_invite">
+    <property name="geometry">
+     <rect>
+      <x>501</x>
+      <y>595</y>
+      <width>60</width>
+      <height>11</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>微软雅黑</family>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(153, 153, 153);</string>
+    </property>
+    <property name="text">
+     <string>邀请</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lab_end">
+    <property name="geometry">
+     <rect>
+      <x>575</x>
+      <y>595</y>
+      <width>60</width>
+      <height>11</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>微软雅黑</family>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(153, 153, 153);</string>
+    </property>
+    <property name="text">
+     <string>结束对讲</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="StuList" native="true">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>70</y>
+      <width>301</width>
+      <height>461</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QWidget[objectName=&quot;StuList&quot;]{
+background-image:url(:/new/prefix1/StuList_BG.png)
+}
+
+QPushButton[objectName=&quot;btn_search&quot;]{
+border-image:url(:/new/prefix1/Search_default.png)
+}
+
+QListWidget{
+border:0
+}
+</string>
+    </property>
+    <widget class="QLabel" name="lab_className">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>40</y>
+       <width>41</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel[objectName = &quot;lab_className&quot;]{
+font: 14px &quot;微软雅黑&quot;;
+}</string>
+     </property>
+     <property name="text">
+      <string>x年x班</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lab_num">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>40</y>
+       <width>101</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(153, 153, 153);
+font: 12px &quot;微软雅黑&quot;;</string>
+     </property>
+     <property name="text">
+      <string>(最多可邀请x/8人)</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="txt_Search">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>60</y>
+       <width>231</width>
+       <height>33</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLineEdit:!hover{
+border-image:url(:/new/prefix1/line_Edit.png);
+color: rgb(102, 102, 102);
+font: 12px &quot;微软雅黑&quot;;
+}
+
+QLineEdit:hover{
+border-image:url(:/new/prefix1/line_Edit_hover.png);
+color: rgb(102, 102, 102);
+font: 12px &quot;微软雅黑&quot;;
+
+}</string>
+     </property>
+     <property name="text">
+      <string>输入学生姓名进行搜索...</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_search">
+     <property name="geometry">
+      <rect>
+       <x>250</x>
+       <y>70</y>
+       <width>16</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton:!hover{
+border-image: url(:/new/prefix1/Search_default.png);
+}
+
+QPushButton:hover{
+border-image: url(:/new/prefix1/Search_hover.png);
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QListWidget" name="listWidget">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>100</y>
+       <width>231</width>
+       <height>301</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QListWidget::Item{background:rgba(0,0,0,0%);margin:0px,0px,0px,0px;padding-left:0px;}&quot;
+
+QScrollBar{width:5px;}</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_InviteConfirm">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>410</y>
+       <width>80</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton:!hover{
+	font: 16px &quot;微软雅黑&quot;;
+	color: rgb(255, 255, 255);
+border-image:url(:/new/prefix1/InviteBtn_default.png);
+background-image: linear-gradient(-90deg, 
+		#1ad5ff 0%, 
+		#14b5f6 45%, 
+		#0e94ec 100%);
+border-radius: 15px;
+}
+
+QPushButton:hover{
+font: 16px &quot;微软雅黑&quot;;
+color: rgb(255, 255, 255);
+border-image:url(:/new/prefix1/InviteBtn_hover.png);
+background-image: linear-gradient(-90deg, 
+		#1ad5ff 0%, 
+		#14b5f6 45%, 
+		#0e94ec 100%);
+border-radius: 15px;
+}</string>
+     </property>
+     <property name="text">
+      <string>确认</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="mengban" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>940</width>
+      <height>120</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QWidget[objectName = &quot;mengban&quot;]{
+border-image:url(:/new/prefix1/mengban.png)
+rgb(255, 255, 255)
+}
+
+QPushButton:!hover
+{
+background-color: rgb(255, 255, 255,0);
+image:url(:/new/prefix1/close_default.png);
+}
+
+QPushButton:hover{
+background-color: rgb(255, 255, 255,0);
+image:url(:/new/prefix1/close_hover.png);
+}</string>
+    </property>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>41</x>
+       <y>20</y>
+       <width>91</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);
+font: 16px &quot;微软雅黑&quot;;</string>
+     </property>
+     <property name="text">
+      <string>师生对讲</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lab_timer">
+     <property name="geometry">
+      <rect>
+       <x>443</x>
+       <y>21</y>
+       <width>81</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>微软雅黑</family>
+       <pointsize>-1</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);
+font: 16px &quot;微软雅黑&quot;;</string>
+     </property>
+     <property name="text">
+      <string>00:00:00</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="Camitem" name="Cam_Stu1" native="true">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>140</y>
+      <width>151</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QWidget[objectName=Cam_Stu1]{background-color: rgb(51, 51, 51);border:1px solid white;
+}
+</string>
+    </property>
+    <layout class="QGridLayout" name="gridLayout"/>
+   </widget>
+   <widget class="QWidget" name="Cam_Invite" native="true">
+    <property name="geometry">
+     <rect>
+      <x>700</x>
+      <y>390</y>
+      <width>241</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QWidget:!hover{background-color: rgb(51, 51, 51);image: url(:/new/prefix1/Add_default.png);border:1px solid white;}
+QWidget:hover{background-color: rgb(51, 51, 51);image: url(:/new/prefix1/Add_hover.png);border:1px solid white;}
+</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="nameitem1">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>570</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(0, 0, 0,0.3);
+
+font: 14px &quot;微软雅黑&quot;;
+image-position:left;
+text-align:center;
+padding-left:5px;
+padding-bottom:2px;
+color: rgb(255, 255, 255);
+border-radius: 3px;</string>
+    </property>
+    <property name="text">
+     <string>李文轩</string>
+    </property>
+    <property name="icon">
+     <iconset resource="images/icons.qrc">
+      <normaloff>:/new/prefix1/mic_White.png</normaloff>:/new/prefix1/mic_White.png</iconset>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="nameitem2">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>590</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(0, 0, 0,0.3);
+icon-position:left;
+font: 14px &quot;微软雅黑&quot;;
+image-position:left;
+text-align:center;
+padding-left:5px;
+padding-bottom:2px;
+color: rgb(255, 255, 255);
+border-radius: 3px;</string>
+    </property>
+    <property name="text">
+     <string>李文轩</string>
+    </property>
+    <property name="icon">
+     <iconset resource="images/icons.qrc">
+      <normaloff>:/new/prefix1/mic_White.png</normaloff>:/new/prefix1/mic_White.png</iconset>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="nameitem3">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>550</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(0, 0, 0,0.3);
+
+font: 14px &quot;微软雅黑&quot;;
+image-position:left;
+text-align:center;
+padding-left:5px;
+padding-bottom:2px;
+color: rgb(255, 255, 255);
+border-radius: 3px;</string>
+    </property>
+    <property name="text">
+     <string>李文轩</string>
+    </property>
+    <property name="icon">
+     <iconset resource="images/icons.qrc">
+      <normaloff>:/new/prefix1/mic_White.png</normaloff>:/new/prefix1/mic_White.png</iconset>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="nameitem4">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>590</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(0, 0, 0,0.3);font: 14px &quot;微软雅黑&quot;;image-position:left;text-align:center;padding-left:5px;padding-bottom:2px;color: rgb(255, 255, 255);
+border-radius: 3px;</string>
+    </property>
+    <property name="text">
+     <string>李文轩</string>
+    </property>
+    <property name="icon">
+     <iconset resource="images/icons.qrc">
+      <normaloff>:/new/prefix1/mic_White.png</normaloff>:/new/prefix1/mic_White.png</iconset>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="nameitem5">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>570</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(0, 0, 0,0.3);
+
+font: 14px &quot;微软雅黑&quot;;
+image-position:left;
+text-align:center;
+padding-left:5px;
+padding-bottom:2px;
+color: rgb(255, 255, 255);
+border-radius: 3px;</string>
+    </property>
+    <property name="text">
+     <string>李文轩</string>
+    </property>
+    <property name="icon">
+     <iconset resource="images/icons.qrc">
+      <normaloff>:/new/prefix1/mic_White.png</normaloff>:/new/prefix1/mic_White.png</iconset>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="nameitem6">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>570</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(0, 0, 0,0.3);
+
+font: 14px &quot;微软雅黑&quot;;
+image-position:left;
+text-align:center;
+padding-left:5px;
+padding-bottom:2px;
+color: rgb(255, 255, 255);
+border-radius: 3px;</string>
+    </property>
+    <property name="text">
+     <string>李文轩</string>
+    </property>
+    <property name="icon">
+     <iconset resource="images/icons.qrc">
+      <normaloff>:/new/prefix1/mic_White.png</normaloff>:/new/prefix1/mic_White.png</iconset>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="nameitem8">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>550</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{background-color: rgba(0, 0, 0,0.3);
+font: 14px &quot;微软雅黑&quot;;
+image-position:left;
+text-align:center;
+padding-left:5px;
+padding-bottom:2px;
+color: rgb(255, 255, 255);
+border-radius: 3px;}
+</string>
+    </property>
+    <property name="text">
+     <string>李文轩</string>
+    </property>
+    <property name="icon">
+     <iconset resource="images/icons.qrc">
+      <normaloff>:/new/prefix1/mic_White.png</normaloff>:/new/prefix1/mic_White.png</iconset>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="nameitem7">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>550</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(0, 0, 0,0.3);
+
+font: 14px &quot;微软雅黑&quot;;
+image-position:left;
+text-align:center;
+padding-left:5px;
+padding-bottom:2px;
+color: rgb(255, 255, 255);
+border-radius: 3px;</string>
+    </property>
+    <property name="text">
+     <string>李文轩</string>
+    </property>
+    <property name="icon">
+     <iconset resource="images/icons.qrc">
+      <normaloff>:/new/prefix1/mic_White.png</normaloff>:/new/prefix1/mic_White.png</iconset>
+    </property>
+   </widget>
+   <widget class="QWidget" name="nameitem0" native="true">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>590</y>
+      <width>132</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QWidget[objectName=nameitem0]{
+background-color: rgba(0, 0, 0,0.3);
+font: 14px &quot;微软雅黑&quot;;
+image-position:left;
+text-align:center;
+padding-left:5px;
+padding-bottom:2px;
+color: rgb(255, 255, 255);
+border-radius: 3px;}
+
+
+
+</string>
+    </property>
+    <widget class="QPushButton" name="pushButton">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>4</y>
+       <width>72</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-image: url(:/new/prefix1/TeacherGreen.png);
+color: rgb(255, 255, 255);
+font: 14px &quot;微软雅黑&quot;;
+padding-right:4px;
+background-color: rgba(255, 255, 255,0);
+border-radius: 3px;</string>
+     </property>
+     <property name="text">
+      <string>上课老师</string>
+     </property>
+    </widget>
+    <widget class="QWidget" name="widget" native="true">
+     <property name="geometry">
+      <rect>
+       <x>91</x>
+       <y>7</y>
+       <width>14</width>
+       <height>18</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-image: url(:/new/prefix1/mic_White.png);</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>108</x>
+       <y>8</y>
+       <width>16</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 14px &quot;微软雅黑&quot;;
+color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>我</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="nameitem_me" native="true">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>550</y>
+      <width>50</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QWidget[objectName=nameitem_me]{border-radius: 3px;border-image: url(:/new/prefix1/TeacherGreen.png);}
+
+</string>
+    </property>
+    <widget class="QWidget" name="widget_2" native="true">
+     <property name="geometry">
+      <rect>
+       <x>9</x>
+       <y>7</y>
+       <width>14</width>
+       <height>18</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-image: url(:/new/prefix1/mic_White.png);</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>26</x>
+       <y>7</y>
+       <width>16</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 14px &quot;微软雅黑&quot;;
+color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>我</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="wid_close" native="true">
+    <property name="geometry">
+     <rect>
+      <x>890</x>
+      <y>170</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QWidget:!hover{
+background-color: rgb(255, 255, 255,0);
+image:url(:/new/prefix1/close_default.png);
+}
+
+QWidget:hover{
+background-color: rgb(255, 255, 255,0);
+image:url(:/new/prefix1/close_hover.png);
+}</string>
+    </property>
+   </widget>
+   <widget class="Camitem" name="Cam_Stu2" native="true">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>130</y>
+      <width>181</width>
+      <height>151</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QWidget[objectName=Cam_Stu2]{background-color: rgb(51, 51, 51);border:1px solid white;
+}</string>
+    </property>
+    <layout class="QGridLayout" name="gridLayout_2"/>
+   </widget>
+   <widget class="Camitem" name="Cam_Stu3" native="true">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>280</y>
+      <width>141</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QWidget[objectName=Cam_Stu3]{background-color: rgb(51, 51, 51);border:1px solid white;
+}
+</string>
+    </property>
+    <layout class="QGridLayout" name="gridLayout_4"/>
+   </widget>
+   <widget class="Camitem" name="Cam_Stu4" native="true">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>290</y>
+      <width>141</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QWidget[objectName=Cam_Stu4]{background-color: rgb(51, 51, 51);border:1px solid white;
+}</string>
+    </property>
+    <layout class="QGridLayout" name="gridLayout_5"/>
+   </widget>
+   <widget class="Camitem" name="Cam_Stu5" native="true">
+    <property name="geometry">
+     <rect>
+      <x>660</x>
+      <y>130</y>
+      <width>141</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QWidget[objectName=Cam_Stu5]{background-color: rgb(51, 51, 51);border:1px solid white;
+}</string>
+    </property>
+    <layout class="QGridLayout" name="gridLayout_6"/>
+   </widget>
+   <widget class="Camitem" name="Cam_Stu6" native="true">
+    <property name="geometry">
+     <rect>
+      <x>670</x>
+      <y>250</y>
+      <width>141</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QWidget[objectName=Cam_Stu6]{background-color: rgb(51, 51, 51);border:1px solid white;
+}</string>
+    </property>
+    <layout class="QGridLayout" name="gridLayout_7"/>
+   </widget>
+   <widget class="Camitem" name="Cam_Stu7" native="true">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>400</y>
+      <width>141</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QWidget[objectName=Cam_Stu7]{background-color: rgb(51, 51, 51);border:1px solid white;
+}</string>
+    </property>
+    <layout class="QGridLayout" name="gridLayout_8"/>
+   </widget>
+   <widget class="Camitem" name="Cam_Stu8" native="true">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>410</y>
+      <width>141</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QWidget[objectName=Cam_Stu8]{background-color: rgb(51, 51, 51);border:1px solid white;
+}</string>
+    </property>
+    <layout class="QGridLayout" name="gridLayout_9"/>
+   </widget>
+   <widget class="Camitem" name="Cam_Teacher" native="true">
+    <property name="geometry">
+     <rect>
+      <x>810</x>
+      <y>260</y>
+      <width>141</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QWidget[objectName=Cam_Teacher]{background-color: rgb(51, 51, 51);border:1px solid white;
+}</string>
+    </property>
+    <layout class="QGridLayout" name="gridLayout_11"/>
+   </widget>
+   <zorder>lab_bg</zorder>
+   <zorder>lab_toolbar</zorder>
+   <zorder>btn_cam</zorder>
+   <zorder>lab_Invite</zorder>
+   <zorder>btn_mic</zorder>
+   <zorder>btn_invite</zorder>
+   <zorder>btn_close</zorder>
+   <zorder>lab_cam</zorder>
+   <zorder>lab_mic</zorder>
+   <zorder>lab_invite</zorder>
+   <zorder>lab_end</zorder>
+   <zorder>StuList</zorder>
+   <zorder>mengban</zorder>
+   <zorder>Cam_Stu1</zorder>
+   <zorder>Cam_Invite</zorder>
+   <zorder>nameitem1</zorder>
+   <zorder>nameitem2</zorder>
+   <zorder>nameitem3</zorder>
+   <zorder>nameitem4</zorder>
+   <zorder>nameitem5</zorder>
+   <zorder>nameitem6</zorder>
+   <zorder>nameitem8</zorder>
+   <zorder>nameitem7</zorder>
+   <zorder>nameitem0</zorder>
+   <zorder>nameitem_me</zorder>
+   <zorder>wid_close</zorder>
+   <zorder>Cam_Stu2</zorder>
+   <zorder>Cam_Stu3</zorder>
+   <zorder>Cam_Stu4</zorder>
+   <zorder>Cam_Stu5</zorder>
+   <zorder>Cam_Stu6</zorder>
+   <zorder>Cam_Stu7</zorder>
+   <zorder>Cam_Stu8</zorder>
+   <zorder>Cam_Teacher</zorder>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>Camitem</class>
+   <extends>QWidget</extends>
+   <header>Camitem.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="images/icons.qrc"/>
+ </resources>
+ <connections/>
+</ui>

@@ -1,0 +1,47 @@
+<RCC>
+    <qresource prefix="/new/prefix1">
+        <file>Add_default.png</file>
+        <file>Add_hover.png</file>
+        <file>btn_bg_default.png</file>
+        <file>btn_bg_hover.png</file>
+        <file>CamareOff_default.png</file>
+        <file>CamareOff_hover.png</file>
+        <file>CamareOn_default.png</file>
+        <file>CamareOn_hover.png</file>
+        <file>checked_confirm.png</file>
+        <file>checked_default.png</file>
+        <file>checked_hover.png</file>
+        <file>close_default.png</file>
+        <file>close_hover.png</file>
+        <file>End_default.png</file>
+        <file>End_hover.png</file>
+        <file>hollowBtn_default.png</file>
+        <file>hollowBtn_hover.png</file>
+        <file>icons.qrc</file>
+        <file>Invitation_hover.png</file>
+        <file>InvitationClose_hover.png</file>
+        <file>Invite_default.png</file>
+        <file>Invite_hover.png</file>
+        <file>InviteBtn_default.png</file>
+        <file>InviteBtn_hover.png</file>
+        <file>line_Edit.png</file>
+        <file>line_Edit_hover.png</file>
+        <file>Meeting_defalut.png</file>
+        <file>Meeting_hover.png</file>
+        <file>Meeting_Tool.png</file>
+        <file>mengban.png</file>
+        <file>MethionClose_default.png</file>
+        <file>MethionClose_hover.png</file>
+        <file>MicOff_default.png</file>
+        <file>MicOff_hover.png.png</file>
+        <file>MicOn_default.png</file>
+        <file>MicOn_hover.png</file>
+        <file>Notice.png</file>
+        <file>Question_Big.png</file>
+        <file>Search_default.png</file>
+        <file>Search_hover.png</file>
+        <file>StuList_BG.png</file>
+        <file>TeacherIcon.png</file>
+        <file>mic_White.png</file>
+    </qresource>
+</RCC>

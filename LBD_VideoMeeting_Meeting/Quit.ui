@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Quit</class>
+ <widget class="QWidget" name="Quit">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>180</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget[objectName=Quit]{
+background-color: rgb(255, 255, 255);
+}</string>
+  </property>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>101</x>
+     <y>54</y>
+     <width>38</width>
+     <height>34</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/new/prefix1/Question_Big.png);</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>147</x>
+     <y>62</y>
+     <width>153</width>
+     <height>19</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 18px &quot;微软雅黑&quot;;</string>
+   </property>
+   <property name="text">
+    <string>是否结束师生对讲</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_Close">
+   <property name="geometry">
+    <rect>
+     <x>86</x>
+     <y>125</y>
+     <width>108</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton:!hover{
+border-image: url(:/new/prefix1/btn_bg_default.png);
+padding-bottom:8px;
+	font: 16px &quot;微软雅黑&quot;;
+
+	color: rgb(255, 255, 255);
+}
+
+QPushButton:hover{
+border-image: url(:/new/prefix1/btn_bg_hover.png);
+padding-bottom:8px;
+	font: 16px &quot;微软雅黑&quot;;
+
+	color: rgb(255, 255, 255);
+}</string>
+   </property>
+   <property name="text">
+    <string>确定</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_Cancel">
+   <property name="geometry">
+    <rect>
+     <x>206</x>
+     <y>125</y>
+     <width>108</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton:!hover{
+border-image: url(:/new/prefix1/hollowBtn_default.png);
+padding-bottom:7px;
+	font: 16px &quot;微软雅黑&quot;;
+
+	color: rgb(0, 153, 255);
+}
+
+QPushButton:hover{
+border-image: url(:/new/prefix1/hollowBtn_hover.png);
+padding-bottom:7px;
+	font: 16px &quot;微软雅黑&quot;;
+
+	color: rgb(0, 153, 255);
+}</string>
+   </property>
+   <property name="text">
+    <string>取消</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_Close_2">
+   <property name="geometry">
+    <rect>
+     <x>368</x>
+     <y>16</y>
+     <width>16</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton:!hover{
+border-image: url(:/new/prefix1/InvitationClose_hover.png);
+}
+QPushButton:hover{
+border-image: url(:/new/prefix1/Invitation_hover.png);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="images/icons.qrc"/>
+ </resources>
+ <connections/>
+</ui>
