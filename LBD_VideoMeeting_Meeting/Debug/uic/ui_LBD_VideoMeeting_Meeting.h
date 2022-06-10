@@ -52,7 +52,6 @@ public:
     QLabel *lab_timer;
     Camitem *Cam_Stu1;
     QGridLayout *gridLayout;
-    QLabel *label_4;
     QWidget *Cam_Invite;
     QPushButton *nameitem1;
     QPushButton *nameitem2;
@@ -72,28 +71,20 @@ public:
     QWidget *wid_close;
     Camitem *Cam_Stu2;
     QGridLayout *gridLayout_2;
-    QLabel *label_5;
     Camitem *Cam_Stu3;
     QGridLayout *gridLayout_4;
-    QLabel *label_6;
     Camitem *Cam_Stu4;
     QGridLayout *gridLayout_5;
-    QLabel *label_7;
     Camitem *Cam_Stu5;
     QGridLayout *gridLayout_6;
-    QLabel *label_10;
     Camitem *Cam_Stu6;
     QGridLayout *gridLayout_7;
-    QLabel *label_11;
     Camitem *Cam_Stu7;
     QGridLayout *gridLayout_8;
-    QLabel *label_8;
     Camitem *Cam_Stu8;
     QGridLayout *gridLayout_9;
-    QLabel *label_9;
     Camitem *Cam_Teacher;
     QGridLayout *gridLayout_11;
-    QLabel *label_12;
 
     void setupUi(QMainWindow *LBD_VideoMeeting_MeetingClass)
     {
@@ -359,11 +350,6 @@ public:
         gridLayout->setSpacing(6);
         gridLayout->setContentsMargins(11, 11, 11, 11);
         gridLayout->setObjectName(QStringLiteral("gridLayout"));
-        label_4 = new QLabel(Cam_Stu1);
-        label_4->setObjectName(QStringLiteral("label_4"));
-
-        gridLayout->addWidget(label_4, 0, 0, 1, 1);
-
         Cam_Invite = new QWidget(centralWidget);
         Cam_Invite->setObjectName(QStringLiteral("Cam_Invite"));
         Cam_Invite->setGeometry(QRect(700, 390, 241, 131));
@@ -542,11 +528,6 @@ public:
         gridLayout_2->setSpacing(6);
         gridLayout_2->setContentsMargins(11, 11, 11, 11);
         gridLayout_2->setObjectName(QStringLiteral("gridLayout_2"));
-        label_5 = new QLabel(Cam_Stu2);
-        label_5->setObjectName(QStringLiteral("label_5"));
-
-        gridLayout_2->addWidget(label_5, 0, 0, 1, 1);
-
         Cam_Stu3 = new Camitem(centralWidget);
         Cam_Stu3->setObjectName(QStringLiteral("Cam_Stu3"));
         Cam_Stu3->setGeometry(QRect(30, 280, 141, 121));
@@ -557,11 +538,6 @@ public:
         gridLayout_4->setSpacing(6);
         gridLayout_4->setContentsMargins(11, 11, 11, 11);
         gridLayout_4->setObjectName(QStringLiteral("gridLayout_4"));
-        label_6 = new QLabel(Cam_Stu3);
-        label_6->setObjectName(QStringLiteral("label_6"));
-
-        gridLayout_4->addWidget(label_6, 0, 0, 1, 1);
-
         Cam_Stu4 = new Camitem(centralWidget);
         Cam_Stu4->setObjectName(QStringLiteral("Cam_Stu4"));
         Cam_Stu4->setGeometry(QRect(190, 290, 141, 121));
@@ -571,11 +547,6 @@ public:
         gridLayout_5->setSpacing(6);
         gridLayout_5->setContentsMargins(11, 11, 11, 11);
         gridLayout_5->setObjectName(QStringLiteral("gridLayout_5"));
-        label_7 = new QLabel(Cam_Stu4);
-        label_7->setObjectName(QStringLiteral("label_7"));
-
-        gridLayout_5->addWidget(label_7, 0, 0, 1, 1);
-
         Cam_Stu5 = new Camitem(centralWidget);
         Cam_Stu5->setObjectName(QStringLiteral("Cam_Stu5"));
         Cam_Stu5->setGeometry(QRect(660, 130, 141, 121));
@@ -585,11 +556,6 @@ public:
         gridLayout_6->setSpacing(6);
         gridLayout_6->setContentsMargins(11, 11, 11, 11);
         gridLayout_6->setObjectName(QStringLiteral("gridLayout_6"));
-        label_10 = new QLabel(Cam_Stu5);
-        label_10->setObjectName(QStringLiteral("label_10"));
-
-        gridLayout_6->addWidget(label_10, 0, 0, 1, 1);
-
         Cam_Stu6 = new Camitem(centralWidget);
         Cam_Stu6->setObjectName(QStringLiteral("Cam_Stu6"));
         Cam_Stu6->setGeometry(QRect(670, 250, 141, 121));
@@ -599,11 +565,6 @@ public:
         gridLayout_7->setSpacing(6);
         gridLayout_7->setContentsMargins(11, 11, 11, 11);
         gridLayout_7->setObjectName(QStringLiteral("gridLayout_7"));
-        label_11 = new QLabel(Cam_Stu6);
-        label_11->setObjectName(QStringLiteral("label_11"));
-
-        gridLayout_7->addWidget(label_11, 0, 0, 1, 1);
-
         Cam_Stu7 = new Camitem(centralWidget);
         Cam_Stu7->setObjectName(QStringLiteral("Cam_Stu7"));
         Cam_Stu7->setGeometry(QRect(10, 400, 141, 121));
@@ -613,11 +574,6 @@ public:
         gridLayout_8->setSpacing(6);
         gridLayout_8->setContentsMargins(11, 11, 11, 11);
         gridLayout_8->setObjectName(QStringLiteral("gridLayout_8"));
-        label_8 = new QLabel(Cam_Stu7);
-        label_8->setObjectName(QStringLiteral("label_8"));
-
-        gridLayout_8->addWidget(label_8, 0, 0, 1, 1);
-
         Cam_Stu8 = new Camitem(centralWidget);
         Cam_Stu8->setObjectName(QStringLiteral("Cam_Stu8"));
         Cam_Stu8->setGeometry(QRect(190, 410, 141, 121));
@@ -627,11 +583,6 @@ public:
         gridLayout_9->setSpacing(6);
         gridLayout_9->setContentsMargins(11, 11, 11, 11);
         gridLayout_9->setObjectName(QStringLiteral("gridLayout_9"));
-        label_9 = new QLabel(Cam_Stu8);
-        label_9->setObjectName(QStringLiteral("label_9"));
-
-        gridLayout_9->addWidget(label_9, 0, 0, 1, 1);
-
         Cam_Teacher = new Camitem(centralWidget);
         Cam_Teacher->setObjectName(QStringLiteral("Cam_Teacher"));
         Cam_Teacher->setGeometry(QRect(810, 260, 141, 121));
@@ -641,11 +592,6 @@ public:
         gridLayout_11->setSpacing(6);
         gridLayout_11->setContentsMargins(11, 11, 11, 11);
         gridLayout_11->setObjectName(QStringLiteral("gridLayout_11"));
-        label_12 = new QLabel(Cam_Teacher);
-        label_12->setObjectName(QStringLiteral("label_12"));
-
-        gridLayout_11->addWidget(label_12, 0, 0, 1, 1);
-
         LBD_VideoMeeting_MeetingClass->setCentralWidget(centralWidget);
         lab_bg->raise();
         lab_toolbar->raise();
@@ -708,7 +654,6 @@ public:
         btn_InviteConfirm->setText(QApplication::translate("LBD_VideoMeeting_MeetingClass", "\347\241\256\350\256\244", nullptr));
         label->setText(QApplication::translate("LBD_VideoMeeting_MeetingClass", "\345\270\210\347\224\237\345\257\271\350\256\262", nullptr));
         lab_timer->setText(QApplication::translate("LBD_VideoMeeting_MeetingClass", "00:00:00", nullptr));
-        label_4->setText(QApplication::translate("LBD_VideoMeeting_MeetingClass", "1", nullptr));
         nameitem1->setText(QApplication::translate("LBD_VideoMeeting_MeetingClass", "\346\235\216\346\226\207\350\275\251", nullptr));
         nameitem2->setText(QApplication::translate("LBD_VideoMeeting_MeetingClass", "\346\235\216\346\226\207\350\275\251", nullptr));
         nameitem3->setText(QApplication::translate("LBD_VideoMeeting_MeetingClass", "\346\235\216\346\226\207\350\275\251", nullptr));
@@ -720,14 +665,6 @@ public:
         pushButton->setText(QApplication::translate("LBD_VideoMeeting_MeetingClass", "\344\270\212\350\257\276\350\200\201\345\270\210", nullptr));
         label_2->setText(QApplication::translate("LBD_VideoMeeting_MeetingClass", "\346\210\221", nullptr));
         label_3->setText(QApplication::translate("LBD_VideoMeeting_MeetingClass", "\346\210\221", nullptr));
-        label_5->setText(QApplication::translate("LBD_VideoMeeting_MeetingClass", "2", nullptr));
-        label_6->setText(QApplication::translate("LBD_VideoMeeting_MeetingClass", "3", nullptr));
-        label_7->setText(QApplication::translate("LBD_VideoMeeting_MeetingClass", "4", nullptr));
-        label_10->setText(QApplication::translate("LBD_VideoMeeting_MeetingClass", "5", nullptr));
-        label_11->setText(QApplication::translate("LBD_VideoMeeting_MeetingClass", "6", nullptr));
-        label_8->setText(QApplication::translate("LBD_VideoMeeting_MeetingClass", "7", nullptr));
-        label_9->setText(QApplication::translate("LBD_VideoMeeting_MeetingClass", "8", nullptr));
-        label_12->setText(QApplication::translate("LBD_VideoMeeting_MeetingClass", "t", nullptr));
     } // retranslateUi
 
 };

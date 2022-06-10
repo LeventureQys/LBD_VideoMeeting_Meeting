@@ -1,9 +1,19 @@
-﻿  moc LBD_VideoMeeting_Meeting.h
+﻿  uic LBD_VideoMeeting_Meeting.ui
+  uic nameItem.ui
+  uic Quit.ui
+  uic TnameItem.ui
+  moc items.h
+  Camitem.cpp
   LBD_VideoMeeting_Meeting.cpp
   main.cpp
+c:\users\administrator\desktop\lbd_videomeeting_meeting\lbd_videomeeting_meeting\lbd_videomeeting_meeting.cpp(1651): warning C4715: “LBD_VideoMeeting_Meeting::AnalyseInsert”: 不是所有的控件路径都返回值
+  qrc_icons.cpp
   moc_LBD_VideoMeeting_Meeting.cpp
-LBD_VideoMeeting_Meeting.obj : error LNK2019: 无法解析的外部符号 "void __stdcall SetMediasoupServerAddress(char *,int)" (?SetMediasoupServerAddress@@YGXPADH@Z)，该符号在函数 "private: void __thiscall LBD_VideoMeeting_Meeting::initConnection(char *,int)" (?initConnection@LBD_VideoMeeting_Meeting@@AAEXPADH@Z) 中被引用
-LBD_VideoMeeting_Meeting.obj : error LNK2019: 无法解析的外部符号 "void __stdcall SetVideoFullStretch(bool)" (?SetVideoFullStretch@@YGX_N@Z)，该符号在函数 "private: void __thiscall LBD_VideoMeeting_Meeting::initCamare(void)" (?initCamare@LBD_VideoMeeting_Meeting@@AAEXXZ) 中被引用
-LBD_VideoMeeting_Meeting.obj : error LNK2019: 无法解析的外部符号 "void __stdcall SetSignalSource(bool,bool,bool)" (?SetSignalSource@@YGX_N00@Z)，该符号在函数 "private: void __thiscall LBD_VideoMeeting_Meeting::initCamare(void)" (?initCamare@LBD_VideoMeeting_Meeting@@AAEXXZ) 中被引用
-LBD_VideoMeeting_Meeting.obj : error LNK2019: 无法解析的外部符号 "void __stdcall JoinMeeting(char *,char *)" (?JoinMeeting@@YGXPAD0@Z)，该符号在函数 "private: void __thiscall LBD_VideoMeeting_Meeting::StartMeeting(char *,char *)" (?StartMeeting@LBD_VideoMeeting_Meeting@@AAEXPAD0@Z) 中被引用
-C:\Users\Administrator\Desktop\Project\5.5\WorkShop\LBD_VideoMeeting_Meeting\Debug\LBD_VideoMeeting_Meeting.exe : fatal error LNK1120: 4 个无法解析的外部命令
+  moc_Camitem.cpp
+  moc_items.cpp
+LBD_VideoMeeting_Meeting.obj : error LNK2019: 无法解析的外部符号 "void __stdcall SetMediasoupServerAddress(char *,int)" (?SetMediasoupServerAddress@@YGXPADH@Z)，该符号在函数 __catch$?Start@LBD_VideoMeeting_Meeting@@QAEXPAD0H0000@Z$0 中被引用
+LBD_VideoMeeting_Meeting.obj : error LNK2019: 无法解析的外部符号 "void __stdcall SetVideoFullStretch(bool)" (?SetVideoFullStretch@@YGX_N@Z)，该符号在函数 __catch$?initConnection@LBD_VideoMeeting_Meeting@@AAEXPADH@Z$0 中被引用
+LBD_VideoMeeting_Meeting.obj : error LNK2019: 无法解析的外部符号 "void __stdcall SetSignalSource(bool,bool,bool)" (?SetSignalSource@@YGX_N00@Z)，该符号在函数 __catch$?initConnection@LBD_VideoMeeting_Meeting@@AAEXPADH@Z$0 中被引用
+LBD_VideoMeeting_Meeting.obj : error LNK2019: 无法解析的外部符号 "void __stdcall JoinMeeting(char *,char *)" (?JoinMeeting@@YGXPAD0@Z)，该符号在函数 __catch$?InitGeometry@LBD_VideoMeeting_Meeting@@AAEXH@Z$0 中被引用
+LBD_VideoMeeting_Meeting.obj : error LNK2019: 无法解析的外部符号 "void __stdcall ExitMeeting(void)" (?ExitMeeting@@YGXXZ)，该符号在函数 "private: void __thiscall Quit::on_btn_Close_clicked(void)" (?on_btn_Close_clicked@Quit@@AAEXXZ) 中被引用
+C:\Users\Administrator\Desktop\LBD_VideoMeeting_Meeting\Debug\LBD_VideoMeeting_Meeting.exe : fatal error LNK1120: 5 个无法解析的外部命令
